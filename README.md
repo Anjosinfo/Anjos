@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Meta tags essenciais -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anjo's Info - Manutenção de Computadores</title>
+  <meta name="description" content="Serviço de manutenção de computadores em Belo Horizonte com qualidade e confiança." />
+  <meta name="keywords" content="manutenção de computadores, formatação, limpeza, anjos info, belo horizonte" />
+
+  <!-- Font Awesome para ícones -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- AOS: Animate On Scroll -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <style>
+    /* Reset de estilo */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: black;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: black;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo-esquerda {
+      flex: 1;
+    }
+
+    .logo-esquerda img {
+      width: 200px;
+    }
+
+    .titulo-centro {
+      flex: 2;
+      text-align: center;
+    }
+
+    .titulo-centro h1 {
+      font-size: 2.5em;
+      color: #ff3333;
+    }
+
+    .titulo-centro p {
+      font-size: 1.2em;
+      color: #ccc;
+    }
+
+    /* Navegação */
+    nav {
+      background-color: grey;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 15px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: #f5f5f5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #ff3333;
+    }
+
+    /* Seções */
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #ff3333;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    section ul li {
+      margin-bottom: 10px;
+    }
+
+    /* Mapa */
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    /* Botão flutuante do WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 15px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+      z-index: 999;
+    }
+
+    .whatsapp-float img {
+      width: 24px;
+      margin-right: 10px;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho com logo e título -->
+  <header data-aos="fade-down">
+    <div class="logo-esquerda">
+      <img src="logo info.png" alt="Logo Anjo's Info" />
+    </div>
+    <div class="titulo-centro">
+      <h1>Anjo's Info</h1>
+      <p>Serviço que faz a diferença!</p>
+    </div>
+  </header>
+
+  <!-- Navegação -->
+  <nav>
+    <ul>
+      <li><a href="#servicos"><i class="fas fa-tools"></i> Serviços</a></li>
+      <li><a href="#sobre"><i class="fas fa-info-circle"></i> Sobre</a></li>
+      <li><a href="#horario"><i class="fas fa-clock"></i> Horário</a></li>
+    </ul>
+  </nav>
+
+  <!-- Seção de Serviços -->
+  <section id="servicos" data-aos="fade-up">
+    <h2>Serviços</h2>
+    <ul>
+      <li><i class="fas fa-laptop"></i> Limpeza interna e externa de computadores</li>
+      <li><i class="fas fa-download"></i> Instalação de softwares e drivers</li>
+      <li><i class="fas fa-microchip"></i> Diagnóstico e reparo de hardware</li>
+      <li><i class="fas fa-rocket"></i> Upgrade e otimização de sistemas</li>
+      <li><i class="fas fa-shield-virus"></i> Remoção de Vírus</li>
+    </ul>
+  </section>
+
+  <!-- Seção Sobre -->
+  <section id="sobre" data-aos="fade-up">
+    <h2>Sobre a Anjo's Info</h2>
+    <p>Nosso objetivo é transformar o processo de manutenção de computadores em algo acessível, rápido e com qualidade. Atuamos com compromisso e atenção ao cliente.</p>
+  </section>
+
+  <!-- Seção de Horário de Funcionamento e Mapa -->
+  <section id="horario" data-aos="fade-up">
+    <h2>Horário de Funcionamento</h2>
+    <ul>
+      <li><i class="fas fa-clock"></i> Segunda a Sexta: 08:00 às 18:00</li>
+      <li><i class="fas fa-clock"></i> Sábado: 08:00 às 13:00</li>
+      <li><i class="fas fa-clock"></i> Domingo: Fechado</li>
+    </ul>
+
+    <!-- Mapa incorporado -->
+    <iframe 
+      src="https://www.google.com/maps?q=Belo+Horizonte,+Primeiro+de+Maio,+MG&output=embed" 
+      allowfullscreen 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </section>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a class="whatsapp-float" href="https://wa.me/5531989764204" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    Fale conosco
+  </a>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Anjo's Info - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Inicializa animações AOS -->
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
